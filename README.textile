@@ -8,6 +8,8 @@ Each module requires a context, which should extend ModuleContext. This context 
 
 The IModuleCommandMap and IModuleEventDispatcher work together to provide the modules with a shared event/command bus for inter-module events to take place. Each module has an individual ModuleCommandMap, but unlike the normal CommandMap this triggers module level commands in response to mapped events that occur over the shared IModuleEventDispatcher.
 
+"Here is an example of using this library":http://joelhooks.com/2010/05/02/modular-robotlegs/
+
 Please see the "RobotLegs framework":http://www.robotlegs.org for more info.
 
 These classes were compiled to work with RobotLegs v1.1.0.
