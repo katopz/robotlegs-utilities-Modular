@@ -19,6 +19,7 @@ package org.robotlegs.utilities.modular.mvcs
 	import org.robotlegs.core.IInjector;
 	import org.robotlegs.core.IMediatorMap;
 	import org.robotlegs.mvcs.Context;
+	import org.robotlegs.mvcs.SignalContext;
 	import org.robotlegs.utilities.modular.base.ModuleCommandMap;
 	import org.robotlegs.utilities.modular.base.ModuleEventDispatcher;
 	import org.robotlegs.utilities.modular.core.IModuleCommandMap;
@@ -31,7 +32,7 @@ package org.robotlegs.utilities.modular.mvcs
      * @author Joel Hooks
      * 
      */    
-    public class ModuleContext extends Context implements IModuleContext
+    public class ModuleContext extends SignalContext implements IModuleContext
     {
         protected var _applicationDomain:ApplicationDomain;
         
